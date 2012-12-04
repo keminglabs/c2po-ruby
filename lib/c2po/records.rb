@@ -4,8 +4,8 @@ module C2PO
       self.merge! h
     end
     def to_edn
-      prefix, name = self.class.name.split("::").map(&:downcase)
-      EDN.tagout "com.keminglabs/#{prefix}$#{name}", {}.merge(self)
+      _, prefix, name = self.class.name.split("::").map(&:downcase)
+      EDN.tagout "com.keminglabs/c2po$#{prefix}$#{name}", {}.merge(self)
     end
   end
 end
