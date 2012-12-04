@@ -1,0 +1,6 @@
+guard 'webrick' do
+end
+
+guard 'livereload' do
+  watch("index.html")
+end
