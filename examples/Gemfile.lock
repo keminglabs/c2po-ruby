@@ -2,6 +2,11 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.3.2)
+    blankslate (2.1.2.4)
+    c2po (0.0.1)
+      edn (~> 1.0.0)
+    edn (1.0.0)
+      parslet (~> 1.4.0)
     em-websocket (0.3.8)
       addressable (>= 2.1.1)
       eventmachine (>= 0.12.9)
@@ -21,6 +26,8 @@ GEM
     launchy (2.1.2)
       addressable (~> 2.3)
     multi_json (1.4.0)
+    parslet (1.4.0)
+      blankslate (~> 2.0)
     rb-fchange (0.0.6)
       ffi
     rb-fsevent (0.9.2)
@@ -33,6 +40,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  c2po
   guard
   guard-livereload
   guard-webrick

@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+gem 'c2po'
 
 gem 'guard'
 gem 'rb-inotify', :require => false

@@ -1,4 +1,4 @@
-require '../lib/c2po'
+require 'c2po'
 include C2PO
 
 OUT_FILE = File.dirname(__FILE__) + "/index.html"
