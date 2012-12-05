@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.3.2)
     blankslate (2.1.2.4)
-    c2po (0.0.1)
+    c2po (0.0.2)
       edn (~> 1.0.0)
     edn (1.0.0)
       parslet (~> 1.4.0)
