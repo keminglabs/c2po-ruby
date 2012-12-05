@@ -5,6 +5,25 @@ C2PO Ruby language bindings
 This Rubygem uses the free online C2PO compiler and is limited to 1 MB of data.
 Plot specifications are compiled directly to an SVG string, which is returned:
 
+```ruby
+require 'c2po'
+
+#Make some random data:
+data = 20.times.collect do
+  {:a => 10*rand, :b => 5*rand}
+end
+
+#Specify a simple scatterplot graphic:
+scatterplot_spec = {
+  :data => data,
+  :geom => :point,
+  :mapping => {:x => :a, :y => :b}}
+
+#Render an SVG string:
+C2PO.render scatterplot_spec
+  #=> '<svg height="660" width="660" ...'
+```
+
 
 Install
 -------
